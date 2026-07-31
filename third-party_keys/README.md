@@ -7,6 +7,7 @@
   - [Keys](#keys)
     - [Cryptomator](#cryptomator)
     - [Handbrake](#handbrake)
+    - [Tails](#tails)
 
 
 ## SOP - Add or Update Key
@@ -28,3 +29,8 @@
 
 - [021DB8B44E4A8645](handbrake_0x021DB8B44E4A8645.asc)
   - [Source](https://github.com/HandBrake/HandBrake/wiki/OpenPGP) (last update: 2026-07-28)
+
+### [Tails](https://tails.net/)
+
+- [DBB802B258ACD84F](./tails_developers_0xDBB802B258ACD84F.asc)
+  - [Source](https://tails.net/tails-signing.key) (last update: 2026-07-31)
