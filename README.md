@@ -1,10 +1,40 @@
 
 
-# @chapb's PGP|GPG keys
+# @chapb's keys
+
+I, [Brennan Chapman](https://brennanchapman.com/), use the following [keys](https://en.wikipedia.org/wiki/Public-key_cryptography).
+
+## General Use
+
+- 2026 - Now: [`4A7226F5AE0C81C7`](4A7226F5AE0C81C7.asc)
+- 2025 - 2026: [`A7665D7B63D46463`](A7665D7B63D46463.asc)
+- 2021 - 2025: [`96450FEE809EF90F`](96450FEE809EF90F.asc)
+
+### Key Management
+
+- The keys are generated in a live [Tails](https://tails.net/) environment, using a well-guarded, single-purpose, air-gapped machine. 
+- The primary key (no expiration) is certify-only and never leaves the Tails environment (or its encrypted, persistent storage).
+  - An online key [`1E9A7FACEFCA511D`](1E9A7FACEFCA511D.asc) (certified by [`4A7226F5AE0C81C7`](4A7226F5AE0C81C7.asc)) is used to certify [third-party keys](./third-party_keys/README.md).
+- The subkeys (annual expiration) are made available via hardware security token, protected by a complex PIN.
+
+> [!TIP]
+> @drduh's [YubiKey Guide](https://github.com/drduh/YubiKey-Guide) is an excellent resource to learn more about managing GPG keys.
+
+
+## E-mail
+
+> [!WARNING] Use Signal 
+> Consider using [Signal](https://signal.org/) to [contact me](https://brennanchapman.com/contact), rather than GPG over e-mail.
+> GPG does not provide many of the security guarantees (e.g., [forward secrecy](https://en.wikipedia.org/wiki/Forward_secrecy)) of a modern protocol and is not a preferred method of communication.
+
+Keys are managed by [Proton](https://proton.me/) and made available by [WKD](https://wiki.gnupg.org/WKD) delegated to [keys.openpgp.org](https://keys.openpgp.org/). 
+
+
+## Key Content
 
 <details>
 
-<summary>4A7226F5AE0C81C7 (current, primary key)</summary>
+<summary>4A7226F5AE0C81C7 (current GPG key)</summary>
 
 ```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -36,7 +66,7 @@ AQC710eCJsMAvXQKlt/FJ4sSZxmobUOiBmiBgs9St5wbAQ==
 
 <details>
 
-<summary>1E9A7FACEFCA511D (current, third-party certification key)</summary>
+<summary>1E9A7FACEFCA511D (current GPG third-party certification key)</summary>
 
 ```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -60,7 +90,7 @@ I2dX2PwiN4hYSpv2xJYA/0PP7h0h5o0fcpbYuLuv0r89p914Y0QwasTE0hO4qzwK
 
 <details>
 
-<summary>A7665D7B63D46463 (old, inaccessible)</summary>
+<summary>A7665D7B63D46463 (old GPG key, inaccessible)</summary>
 
 ```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -179,7 +209,7 @@ apBqGZjqhLgl82/flLYRS6sXWj/GpYSvGqc1NiGVipYjSH59mhOZT3pVPtCl1tNU
 
 <details>
 
-<summary>96450FEE809EF90F (old, inaccessible)</summary>
+<summary>96450FEE809EF90F (old GPG key, inaccessible)</summary>
 
 ```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -486,25 +516,3 @@ vQTO8xftjKbm0phSRw==
 ```
 
 </details>
-
-## Keys 
-
-- Current key: [`4A7226F5AE0C81C7`](4A7226F5AE0C81C7.asc)
-  - Current, third-party certification key: [`1E9A7FACEFCA511D`](1E9A7FACEFCA511D.asc)
-- 2025 - 2026: [`A7665D7B63D46463`](A7665D7B63D46463.asc)
-- 2021 - 2025: [`96450FEE809EF90F`](96450FEE809EF90F.asc)
-
-## Key Management
-
-Keys are generated on a well-guarded, air-gapped machine: 
-- The primary key is certify-only and never leaves the machine. 
-- The subkeys (sign, encrypt, authenticate) are copied to a hardware authentication device.
-
-### Certifying third-party keys
-
-Certifying third-party keys (e.g., when validating binaries) using a well-guarded, air-gapped machine is cumbersome. Therefore, a third-party certification key [`1E9A7FACEFCA511D`](1E9A7FACEFCA511D.asc), signed (i.e., certified) by [`4A7226F5AE0C81C7`](4A7226F5AE0C81C7.asc), is kept available in hot storage for this purpose. 
-
-> [!NOTE]
-> Private keys are never stored in plain-text -- they are always protected by a strong passphrase. 
-
-
