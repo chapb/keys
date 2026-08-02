@@ -23,7 +23,7 @@ I, [Brennan Chapman](https://brennanchapman.com/), use the following [keys](http
 
 ## E-mail
 
-> [!WARNING] Use Signal 
+> [!WARNING]
 > Consider using [Signal](https://signal.org/) to [contact me](https://brennanchapman.com/contact), rather than GPG over e-mail.
 > GPG does not provide many of the security guarantees (e.g., [forward secrecy](https://en.wikipedia.org/wiki/Forward_secrecy)) of a modern protocol and is not a preferred method of communication.
 
