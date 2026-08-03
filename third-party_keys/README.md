@@ -8,6 +8,7 @@
     - [Cryptomator](#cryptomator)
     - [Handbrake](#handbrake)
     - [Tails](#tails)
+    - [VeraCrypt](#veracrypt)
 
 
 ## SOP - Add or Update Key
@@ -34,3 +35,8 @@
 
 - [DBB802B258ACD84F](./tails_developers_0xDBB802B258ACD84F.asc)
   - [Source](https://tails.net/tails-signing.key) (last update: 2026-07-31)
+
+### [VeraCrypt](https://veracrypt.jp)
+
+- [821ACD02680D16DE](./veracrypt_team_0x821ACD02680D16DE.asc)
+  - [Source](https://amcrypto.jp/VeraCrypt/VeraCrypt_PGP_public_key.asc) (last update: 2026-08-03)
